@@ -155,3 +155,62 @@ footer {
 social-links a:hover {
     color: #0056b3;
 }
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    nav li {
+        margin: 0 0.5rem;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .cta-button {
+        margin-top: 0.5rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .project {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .cta-button {
+        margin-top: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    section {
+        padding: 1.5rem 1rem;
+    }
+
+    .project {
+        width: calc(100% - 2rem);
+    }
+}
