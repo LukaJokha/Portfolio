@@ -33,4 +33,6 @@ Google Fonts loads DM Sans, Space Grotesk, and Instrument Serif, with system fal
 
 ## Deployment
 
-The included workflow builds and deploys on pushes to `main`. In **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. No secrets are required.
+The prebuilt site is included in `docs/` for branch-based GitHub Pages hosting. Run `npm run build:pages` after source changes and commit the updated `docs/` directory. Set **Settings → Pages → Deploy from a branch → main → /docs**.
+
+A manually triggered GitHub Actions workflow is also included. To use it, select **GitHub Actions** as the Pages source and run the deployment workflow. No secrets are required. GitHub account billing restrictions can prevent either hosting workflow from starting.
