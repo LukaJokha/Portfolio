@@ -1,12 +1,21 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "This website was made to interprise Biography about me, my skills and my projects. ♥",
-  "main": "script.js",
+  "private": true,
+  "type": "module",
+  "description": "Luka Jokhadze — an interactive developer portfolio with a real-time 3D playground.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "node --check script.js && node --check scene.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Luka Jokhadze",
+  "license": "ISC",
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "vite": "8.3.5"
+  }
 }

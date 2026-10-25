@@ -1,3 +1,36 @@
-This website was made to interprise Biography about me, my skills and my projects. ♥
+# Luka Jokhadze — Portfolio
 
-Live : https://lukajokha.github.io/Portfolio/
+An interactive developer portfolio: a real-time chrome sculpture, a floating navigation dock, selected project explorations, and a direct way to get in touch.
+
+**Live:** https://lukajokha.github.io/Portfolio/
+
+## Run locally
+
+Requires Node.js 22.12+ or 24+.
+
+```sh
+npm ci
+npm run dev
+```
+
+`npm run check` checks application syntax. `npm run build` creates the production site in `dist/`; `npm run preview` serves it locally. Vite uses relative asset paths so the build works at the GitHub Pages repository subpath.
+
+## Experience
+
+- Four directly linkable views: `#home`, `#work`, `#about`, and `#contact`.
+- Three.js sculpture with drag and keyboard rotation, floating satellites, and three remixable forms. Geometry is generated locally; no remote model files or API keys are required.
+- Animation pause, reduced-motion support, tab-aware rendering, capped pixel density, and a static fallback if WebGL is unavailable.
+- Accessible project dialogs, real repository links, and an email copy action.
+- Responsive desktop, tablet, and phone layouts.
+
+The project previews are original visual studies, not screenshots or claims about production metrics. Project descriptions are based on the linked repositories.
+
+## Edit content
+
+Update visible copy in `index.html` and project details in `script.js`. Sculpture geometry and lighting live in `scene.js`, with presentation in `style.css`.
+
+Google Fonts loads DM Sans, Space Grotesk, and Instrument Serif, with system fallbacks. Three.js and the application are bundled locally by Vite.
+
+## Deployment
+
+The included workflow builds and deploys on pushes to `main`. In **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. No secrets are required.
